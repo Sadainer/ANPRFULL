@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         btSplash.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent intent =
-                        new Intent(MainActivity.this, Splash.class);
+                        new Intent(MainActivity.this, principal.class);
                 startActivity(intent);
             }
         });

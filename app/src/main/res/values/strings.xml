@@ -4,9 +4,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_principal">principal</string>
 
-    <string name="title_section1">UNIVERSIDAD</string>
-    <string name="title_section2">CENTRO COMERCIAL</string>
-    <string name="title_section3">PARQUEADERO</string>
+    <string name="title_section1">REGISTRAR ENTRADAS</string>
+    <string name="title_section2">DURACION DEL VEHÍCULO</string>
+    <string name="title_section3">CONSULTAS</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

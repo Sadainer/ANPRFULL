@@ -1,5 +1,6 @@
 package com.anpr.tecnoparque.anprfull;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -10,14 +11,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    public Button btSplash ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btSplash = (Button) findViewById(R.id.btnSplash);
+        btSplash.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Intent intent =
+                        new Intent(MainActivity.this, Splash.class);
+                startActivity(intent);
+            }
+        });
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())

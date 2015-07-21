@@ -1,39 +1,24 @@
 package com.anpr.tecnoparque.anprfull;
 
-import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.security.Principal;
 
-
-public class Splash extends ActionBarActivity {
-
-    private final int SPLASH_DISPLAY_LENGTH = 1500;
+public class registro_vehicular extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run() {
-                /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(Splash.this,principal.class);
-                Splash.this.startActivity(mainIntent);
-                Splash.this.finish();
-            }
-        }, SPLASH_DISPLAY_LENGTH);
+        setContentView(R.layout.activity_registro_vehicular);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splash, menu);
+        getMenuInflater().inflate(R.menu.menu_registro_vehicular, menu);
         return true;
     }
 

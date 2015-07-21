@@ -57,8 +57,10 @@ public class principal extends ActionBarActivity
     }
 
     public void onSectionAttached(int number) {
+        Activity activity= null;
         switch (number) {
             case 1:
+                activity = new registro_vehicular();
                 mTitle = getString(R.string.title_section1);
                 break;
             case 2:

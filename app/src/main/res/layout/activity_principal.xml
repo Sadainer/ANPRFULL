@@ -9,12 +9,312 @@
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="396dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btnConsulta"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CÁMARA"
+                android:id="@+id/btnCamara"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MICROFONO"
+                android:id="@+id/btnMicrofono"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_above="@+id/tableLayout" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTRADA"
+                android:id="@+id/btnEntrada"
+                android:layout_above="@+id/btnSalida"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="#ff00d019"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIDA"
+                android:id="@+id/btnSalida"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:backgroundTint="#ffff1800"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/btnCamara"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/btnEntrada"
+                android:id="@+id/tableLayout">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="CÉDULA:"
+                        android:id="@+id/textView5"
+                        android:layout_column="1"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16dp"
+                        android:textColor="#ffff0100" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textView7"
+                        android:layout_column="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="15dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="NOMBRE:"
+                        android:id="@+id/textView5"
+                        android:layout_column="1"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#ffff0100"
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textView8"
+                        android:layout_column="4"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="APELLIDO:"
+                        android:id="@+id/textView6"
+                        android:layout_column="1"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#ffff0100"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textView9"
+                        android:layout_column="4"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="FOTO:"
+                        android:id="@+id/textView10"
+                        android:layout_column="1"
+                        android:layout_marginTop="70dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#ffff0100" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:layout_column="4"
+                        android:layout_margin="90dp" />
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ESTE ES EL PRINCIPAL"
-            android:id="@+id/textView2"
-            android:layout_gravity="center" />
+            android:text="REGISTRO VEHICULAR"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:textColor="#ffff0100"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="113dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="PLACA:"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="16dp"
+                android:textColor="#ffff0100"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toLeftOf="@+id/btnConsulta"
+                android:layout_toStartOf="@+id/btnConsulta" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/btnConsulta"
+                android:layout_alignTop="@+id/editText2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat

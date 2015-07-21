@@ -11,7 +11,7 @@
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="396dp"
+            android:layout_height="435dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/btnConsulta"
@@ -88,7 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="CÉDULA:"
+                        android:text="ID Usuario:"
                         android:id="@+id/textView5"
                         android:layout_column="1"
                         android:layout_marginTop="10dp"
@@ -130,7 +130,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="NOMBRE:"
+                        android:text="Fecha Ingreso:"
                         android:id="@+id/textView5"
                         android:layout_column="1"
                         android:layout_marginTop="15dp"
@@ -161,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="APELLIDO:"
+                        android:text="Hora:"
                         android:id="@+id/textView6"
                         android:layout_column="1"
                         android:layout_marginTop="15dp"
@@ -298,7 +298,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2"
+                android:id="@+id/txtPlaca"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/textView2"
                 android:layout_toLeftOf="@+id/btnConsulta"
@@ -310,7 +310,7 @@
                 android:layout_height="wrap_content"
                 android:text="OK"
                 android:id="@+id/btnConsulta"
-                android:layout_alignTop="@+id/editText2"
+                android:layout_alignTop="@+id/txtPlaca"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
         </RelativeLayout>
